@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+   <!-- Mirrored from preschool.dreamguystech.com/html-template/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Oct 2021 11:11:58 GMT -->
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+      <title>Preskool - Register</title>
+      <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}">
+      <link rel="stylesheet" href="{% static 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&amp;display=swap' %}">
+      <link rel="stylesheet" href="{% static 'assets/plugins/bootstrap/css/bootstrap.min.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/fontawesome.min.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/all.min.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+   </head>
+   <body>
+      <div class="main-wrapper login-body">
+         <div class="login-wrapper">
+            <div class="container">
+               <div class="loginbox">
+                <div class="card text-center">
+                    <div class="card-header">
+                        Registration As STUDENT Or STAFF !
+                    </div>
+                <div class="row" style="margin-top: 70px">
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Register As Student</h5>
+                          <p class="card-text">Registration as Student and Get Access The Own Dashboard !</p>
+                          <a href="{% url 'add_student' %}" class="btn btn-primary">Register Student</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Register As Staff</h5>
+                          <p class="card-text">Registration as Staff and Get Access The Own Dashboard !</p>
+                          <a href="#" class="btn btn-primary">Register Staff</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="text-center dont-have">Already have an account? <a href="login.html{% url 'user_login' %}">Login</a></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+      <script src="{% static 'assets/js/popper.min.js' %}"></script>
+      <script src="{% static 'assets/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+      <script src="{% static 'assets/js/script.js' %}"></script>
+   </body>
+   <!-- Mirrored from preschool.dreamguystech.com/html-template/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Oct 2021 11:11:58 GMT -->
+</html>
